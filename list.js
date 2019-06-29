@@ -5,7 +5,7 @@ var AWS = require('aws-sdk'),
 
 exports.readAllMovies = function(event, context, callback){
 	var params = {
-		TableName : process.env.TABLE_NAME
+		TableName : "movies"
 	};
 	documentClient.scan(params, function(err, data){
 		if(err){
@@ -14,4 +14,4 @@ exports.readAllMovies = function(event, context, callback){
 		    callback(null, data.Items);
 		}
 	});
-}
+};
