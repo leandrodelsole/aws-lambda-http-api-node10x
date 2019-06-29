@@ -38,3 +38,8 @@ Ao final do Setup, são exibidos comandos curl para os endpoints existentes. Bas
 Execute o `destroy.sh` antes de ir embora :)
 Ele irá apagar todos os recursos gerenciados pelo Terraform, criados por este projeto.
 Para limpar completamente sua conta AWS, é preciso apagar manualmente os logs criados pelos Lambdas, presentes no CloudWatch.
+
+## Fonte
+
+Este repositório é um fork do:
+https://github.com/mlabouardy/movies-dynamodb-lambda
